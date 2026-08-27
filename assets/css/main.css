@@ -13968,9 +13968,9 @@ span {
   border-bottom-left-radius: 100px;
 }
 @media (max-width: 1399px) {
-  .best-food-menu-wrapper-3 .food-menu-image img {
+  /* .best-food-menu-wrapper-3 .food-menu-image img {
     border-radius: 12px;
-  }
+  } */
 }
 .best-food-menu-wrapper-3 .food-menu-mid-item {
   margin-left: 80px;
@@ -17458,7 +17458,7 @@ span {
   font-weight: 800;
 }
 .contact-booking-wrapper-3 p span a {
-  color: var(--theme);
+  color: #fff;
 }
 
 .contact-flag-box-in {
@@ -21271,6 +21271,11 @@ span {
         height: auto;
         object-fit: contain;
     }
+
+    .footer-bottom {
+        padding: 10px 0px 130px;
+        text-align: center;
+    }
 }
 
 /* ===== MOBILE ===== */
@@ -21285,6 +21290,11 @@ span {
         width: 100%;
         height: auto;
         object-fit: contain;
+    }
+
+        .footer-bottom {
+        padding: 10px 0px 130px;
+        text-align: center;
     }
 }
 
@@ -21301,4 +21311,26 @@ span {
         height: auto;
         object-fit: contain;
     }
+
+        .footer-bottom {
+        padding: 10px 0px 100px;
+        text-align: center;
+    }
 }
+
+
+
+@media (max-width: 574px) {
+    .single-banner {
+        margin-top: 90px;
+        /* border-radius: 25px 25px 0 0; */
+    }
+
+        .footer-bottom {
+        padding: 10px 0px 100px;
+        text-align: center;
+    }
+}
+
+
+
