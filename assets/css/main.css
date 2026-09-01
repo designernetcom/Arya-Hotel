@@ -53,7 +53,7 @@ body {
   font-weight: 500;
   line-height: 28px;
   color: var(--text);
-  background-color: var(--body);
+  background-color: #eddeca21;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -3808,7 +3808,7 @@ span {
 }
 
 .footer-widget-wrapper {
-  padding: 90px 0 120px;
+  padding: 90px 0 40px;
 }
 @media (max-width: 1199px) {
   .footer-widget-wrapper {
@@ -12582,8 +12582,8 @@ span {
   width: 100%;
   height: 100%;
   border-radius: 16px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  /* border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; */
 }
 .news-box-items-two .thumb .date-box {
   background-color: var(--theme);
@@ -17482,12 +17482,14 @@ span {
   z-index: -1;
   top: 60px;
   height: initial;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
 }
 .contact-flag-box-in .title {
   font-size: 32px;
   font-weight: 500;
   margin-top: 40px;
-  border-bottom: 3px dashed var(--theme2);
+  /* border-bottom: 3px dashed var(--theme2); */
   padding-bottom: 20px;
 }
 .contact-flag-box-in .content-item {
@@ -19683,6 +19685,7 @@ span {
 .food-category-section-4 .section-title .nav .nav-item .nav-link.active {
   background-color: var(--theme);
   border-color: var(--theme);
+  color: #fff;
 }
 
 .shop-notices-wrapper {
@@ -21334,3 +21337,545 @@ span {
 
 
 
+.mt-2 {
+  margin-top: 70px !important;
+}
+
+.mt-3 {
+  margin-top: 40px;
+}
+
+.mt-4 {
+  margin-top: 100px !important;
+}
+
+
+
+.google-map-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.map-box {
+    width: 100%;
+    height: 415px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .map-box {
+        height: 280px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .google-map-items {
+        gap: 20px;
+    }
+
+    .map-box {
+        height: 250px;
+        border-radius: 8px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .map-box {
+        height: 220px;
+    }
+}
+
+
+.mt-0 {
+  margin-top: 0px !important;
+}
+
+
+
+
+
+/* =====================================
+   HOTEL SKETCH BACKGROUND
+===================================== */
+
+.hotel-sketch-bg {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at center,
+            #ffffff 0%,
+            #fffdf8 45%,
+            #faf6ed 100%
+        );
+}
+
+
+/* Keep actual section content above sketch */
+
+.hotel-sketch-bg .container {
+    position: relative;
+    z-index: 3;
+}
+
+
+/* Main sketch wrapper */
+
+.hotel-line-art {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+
+    /* Control sketch visibility here */
+    opacity: 0.12;
+}
+
+
+/* =====================================
+   HOTEL BUILDING
+===================================== */
+
+.hotel-building {
+    position: absolute;
+    bottom: 50px;
+
+    width: 380px;
+    height: 310px;
+
+    border: 2px solid #7d2c52;
+
+    transform: skewY(-2deg);
+}
+
+
+/* LEFT HOTEL */
+
+.hotel-building-left {
+    left: -80px;
+}
+
+
+/* RIGHT HOTEL */
+
+.hotel-building-right {
+    right: -90px;
+    width: 330px;
+    height: 260px;
+}
+
+
+/* =====================================
+   HOTEL ROOF
+===================================== */
+
+.hotel-roof {
+    position: absolute;
+
+    top: -25px;
+    left: -15px;
+
+    width: calc(100% + 30px);
+    height: 25px;
+
+    border-top: 2px solid #7d2c52;
+    border-left: 2px solid #7d2c52;
+    border-right: 2px solid #7d2c52;
+
+    transform: skewX(-15deg);
+}
+
+
+/* Roof decorative second line */
+
+.hotel-roof::after {
+    content: "";
+
+    position: absolute;
+
+    left: 10px;
+    right: 10px;
+    top: 8px;
+
+    border-top: 1px solid #7d2c52;
+}
+
+
+/* =====================================
+   FLOORS
+===================================== */
+
+.hotel-floor {
+    position: absolute;
+
+    left: 25px;
+    right: 25px;
+
+    display: flex;
+    gap: 18px;
+}
+
+
+/* Upper floor */
+
+.hotel-floor.floor-1 {
+    top: 55px;
+}
+
+
+/* Lower floor */
+
+.hotel-floor.floor-2 {
+    top: 155px;
+}
+
+
+/* Windows */
+
+.hotel-floor span {
+    position: relative;
+
+    display: block;
+
+    flex: 1;
+    height: 70px;
+
+    border: 2px solid #7d2c52;
+}
+
+
+/* Window vertical line */
+
+.hotel-floor span::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    left: 50%;
+
+    border-left: 1px solid #7d2c52;
+}
+
+
+/* Window horizontal line */
+
+.hotel-floor span::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    top: 50%;
+
+    border-top: 1px solid #7d2c52;
+}
+
+
+/* =====================================
+   HOTEL DOOR
+===================================== */
+
+.hotel-door {
+    position: absolute;
+
+    width: 65px;
+    height: 75px;
+
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border: 2px solid #7d2c52;
+    border-bottom: 0;
+}
+
+
+/* Door center line */
+
+.hotel-door::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 50%;
+
+    border-left: 1px solid #7d2c52;
+}
+
+
+/* =====================================
+   SKETCH GROUND
+===================================== */
+
+.sketch-ground {
+    position: absolute;
+
+    left: -5%;
+    right: -5%;
+    bottom: 45px;
+
+    height: 50px;
+
+    border-top: 1px solid #7d2c52;
+
+    transform: rotate(-1deg);
+}
+
+
+/* Additional ground sketch lines */
+
+.sketch-ground::before,
+.sketch-ground::after {
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+
+    border-top: 1px solid #7d2c52;
+}
+
+.sketch-ground::before {
+    top: 12px;
+    transform: rotate(1deg);
+}
+
+.sketch-ground::after {
+    top: 27px;
+    transform: rotate(-0.5deg);
+}
+
+
+/* =====================================
+   SOFT WHITE CENTER FOR TEXT READABILITY
+===================================== */
+
+.hotel-sketch-bg::after {
+    content: "";
+
+    position: absolute;
+
+    z-index: 1;
+
+    top: 0;
+    bottom: 0;
+
+    left: 18%;
+    right: 18%;
+
+    background: radial-gradient(
+        ellipse at center,
+        rgba(255,255,255,0.96) 0%,
+        rgba(255,255,255,0.82) 45%,
+        rgba(255,255,255,0) 78%
+    );
+
+    pointer-events: none;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 991px) {
+
+    .hotel-line-art {
+        opacity: 0.08;
+    }
+
+    .hotel-building-left {
+        left: -220px;
+    }
+
+    .hotel-building-right {
+        right: -220px;
+    }
+
+}
+
+
+@media (max-width: 575px) {
+
+    .hotel-building {
+        transform: scale(0.75);
+    }
+
+    .hotel-building-left {
+        left: -260px;
+    }
+
+    .hotel-building-right {
+        right: -250px;
+    }
+
+    .hotel-sketch-bg::after {
+        left: 0;
+        right: 0;
+    }
+
+}
+
+
+
+
+
+.history-top-section {
+    position: relative;
+    overflow: hidden;
+    background: #fffdf8;
+    z-index: 1;
+}
+
+/* Keep actual content above background sketches */
+.history-top-section .container {
+    position: relative;
+    z-index: 5;
+}
+
+
+/* ==================================
+   HOTEL / PLANT SKETCH BACKGROUND
+================================== */
+
+.history-sketch {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.history-sketch img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    /* Main effect */
+    opacity: 0.07;
+
+    /* Gives sketch a soft warm tone */
+    filter:
+        sepia(1)
+        saturate(0.7)
+        brightness(1.05);
+}
+
+
+/* LEFT HOTEL */
+
+.history-sketch-left {
+    left: -80px;
+    bottom: -50px;
+    width: 520px;
+}
+
+
+/* RIGHT PLANT */
+
+.history-sketch-right {
+    right: -50px;
+    bottom: -40px;
+    width: 420px;
+
+    transform: rotate(-5deg);
+}
+
+
+/* Soft center area so text stays readable */
+
+.history-top-section::before {
+    content: "";
+    position: absolute;
+
+    width: 70%;
+    height: 100%;
+
+    left: 50%;
+    top: 0;
+
+    transform: translateX(-50%);
+
+    background: radial-gradient(
+        ellipse at center,
+        rgba(255, 253, 248, 0.98) 0%,
+        rgba(255, 253, 248, 0.92) 45%,
+        rgba(255, 253, 248, 0.35) 75%,
+        transparent 100%
+    );
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* Existing decorative shapes */
+
+.history-top-section .shape-1,
+.history-top-section .shape-2 {
+    position: absolute;
+    z-index: 2;
+}
+
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media (max-width: 1199px) {
+
+    .history-sketch-left {
+        width: 420px;
+        left: -120px;
+    }
+
+    .history-sketch-right {
+        width: 350px;
+        right: -100px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .history-sketch img {
+        opacity: 0.045;
+    }
+
+    .history-sketch-left {
+        width: 300px;
+        left: -150px;
+        bottom: 0;
+    }
+
+    .history-sketch-right {
+        width: 260px;
+        right: -130px;
+        bottom: 20px;
+    }
+
+    .history-top-section::before {
+        width: 100%;
+        background: rgba(255, 253, 248, 0.82);
+    }
+}
